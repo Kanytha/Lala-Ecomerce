@@ -36,6 +36,7 @@ public class TopManagementActivity extends AppCompatActivity {
             intent.putExtra("category", "Tops"); // Pass the category
             startActivity(intent); // Navigate to the Add Product screen
         });
+
     }
 
     // Sample data for testing

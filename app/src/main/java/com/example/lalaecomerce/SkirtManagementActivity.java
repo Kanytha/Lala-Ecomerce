@@ -25,17 +25,13 @@ public class SkirtManagementActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerView);
         FloatingActionButton addButton = findViewById(R.id.fabAdd);
 
+
         // Set up RecyclerView
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         productList = getSampleProducts(); // Replace with actual data source
         adapter = new RecyclerAdapter(productList, this);
         recyclerView.setAdapter(adapter);
 
-        // Set click listener for the Add Button
-        addButton.setOnClickListener(v -> {
-            Intent intent = new Intent(SkirtManagementActivity.this, RecyclerAdapter.class);
-            startActivity(intent); // Navigate to the Add Product screen
-        });
     }
 
     // Method to generate sample product data

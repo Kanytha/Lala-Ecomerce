@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Product Image -->
+            <ImageView
+                android:id="@+id/addProductImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="Product image"
+                android:src="@drawable/ic_launcher_foreground"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <!-- Add Image Button -->
+            <Button
+                android:id="@+id/addImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Image"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Product Name -->
+            <EditText
+                android:id="@+id/addProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product Name"
+                android:inputType="text"
+                android:padding="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edit_text_background"/>
+
+            <!-- Product Price -->
+            <EditText
+                android:id="@+id/addProductPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Price ($)"
+                android:inputType="numberDecimal"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_background"/>
+
+            <!-- Product Description -->
+            <EditText
+                android:id="@+id/addProductDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:gravity="top"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_background"/>
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/submitProductButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Product"
+                android:backgroundTint="@color/orange"
+                android:textColor="@color/white"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

@@ -1,6 +1,7 @@
 package com.example.lalaecomerce;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,6 +42,14 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
                 .placeholder(R.drawable.skirt) // Placeholder while loading
                 .error(R.drawable.ic_launcher_foreground) // Error image if loading fails
                 .into(holder.productImage);
+
+        // Set click listener for the edit icon
+        holder.editIcon.setOnClickListener(v -> {
+            Intent intent = new Intent(context, EditProduct.class);
+            intent.putExtra("productName", product.getName()); // Pass the product ID
+            context.startActivity(intent);
+        });
+
     }
 
     @Override

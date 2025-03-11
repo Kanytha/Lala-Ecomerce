@@ -56,13 +56,13 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:src="@drawable/skirt"
-                    app:tint="@color/white"/>
+                    android:scaleType="centerInside"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Skirts"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:textSize="18sp"
                     android:layout_marginTop="8dp"/>
             </LinearLayout>
@@ -89,14 +89,13 @@
                     android:id="@+id/imageDress"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/dress"
-                    app:tint="@color/white"/>
+                    android:src="@drawable/dress" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Dresses"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:textSize="18sp"
                     android:layout_marginTop="8dp"/>
             </LinearLayout>
@@ -123,14 +122,13 @@
                     android:id="@+id/imageCropTop"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/croptop"
-                    app:tint="@color/white"/>
+                    android:src="@drawable/croptop"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Tops"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:textSize="18sp"
                     android:layout_marginTop="8dp"/>
             </LinearLayout>
@@ -157,14 +155,13 @@
                     android:id="@+id/imageBottom"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/jean"
-                    app:tint="@color/white"/>
+                    android:src="@drawable/bottom"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Bottoms"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:textSize="18sp"
                     android:layout_marginTop="8dp"/>
             </LinearLayout>

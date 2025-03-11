@@ -35,6 +35,7 @@ public class DressManagementActivity extends AppCompatActivity {
             Intent intent = new Intent(DressManagementActivity.this, RecyclerAdapter.class);
             startActivity(intent); // Navigate to the Add Product screen
         });
+
     }
 
     // Sample data for testing

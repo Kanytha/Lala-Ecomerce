@@ -36,6 +36,15 @@ public class BottomManagementActivity extends AppCompatActivity {
             intent.putExtra("category", "Bottoms"); // Pass the category
             startActivity(intent); // Navigate to the Add Product screen
         });
+
+        // Initialize the FAB
+        FloatingActionButton fabAdd = findViewById(R.id.fabAdd);
+
+        // Set click listener for the FAB
+        fabAdd.setOnClickListener(v -> {
+            Intent intent = new Intent(this, AddProduct.class);
+            startActivity(intent);
+        });
     }
 
     // Sample data for testing
