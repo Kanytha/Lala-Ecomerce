@@ -19,9 +19,6 @@
             android:name=".EditProduct"
             android:exported="false" />
         <activity
-            android:name=".EditProductPage"
-            android:exported="false" />
-        <activity
             android:name=".BottomManagementActivity"
             android:exported="false" />
         <activity
@@ -35,9 +32,6 @@
             android:exported="false" />
         <activity
             android:name=".AdminActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginAdmin"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
